@@ -1,12 +1,12 @@
-<?php include("admin/admin_inc/db.php");?>
+<?php include("db.php");?>
 
 <!DOCTYPE html>
 <html>
 <head>
 <title>Matrisokhi ~Helping Women~</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">				
+<link href="bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="chocolat.css" type="text/css" media="screen">				
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,14 +15,14 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //Custom Theme files -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="jquery-1.11.1.min.js"></script> 
 <!-- //js -->	
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<!--header-->
-	<?php include("inc/header.php"); ?>
+	<?php include("header.php"); ?>
 	
 	
 	<style>
@@ -88,7 +88,7 @@
 	
 	
 	<!--footer-->
-	<?php include("inc/footer.php");?>
+	<?php include("footer.php");?>
 	
 	<!-- jQuery library -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
