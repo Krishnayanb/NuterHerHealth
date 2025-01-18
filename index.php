@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Header -->
-    <?php include("inc/header.php"); ?>
+    <?php include("header.php"); ?>
 
     <!-- Banner -->
     <div class="container-fluid py-3 mb-5 banner">
