@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 footer-img">
-					<a href="index.php"><img src="images/logo.png" alt="logo" width=250px height=250px/></a>
+					<a href="index.php"><img src="logo.png" alt="logo" width=250px height=250px/></a>
 				</div>
 				<div class="col-md-4 ql cl-effect-5">
 					<h4>Quick Links</h4>
