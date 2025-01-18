@@ -1,24 +1,4 @@
-<?php session_start(); 
-include("admin_inc/db.php");
-if(isset($_POST['login'])){
-    $e=$_POST['email'];
-    $p=$_POST['pass'];
 
-    $sel="SELECT * FROM admin WHERE aemail='$e' AND apass='$p'";
-    $rs=$con->query($sel);
-    if($rs->num_rows>0){
-        $dt=$rs->fetch_assoc();
-        $_SESSION['admin_name']=$dt['aname'];
-        $_SESSION['role']=$dt['role'];
-        header("location:dashboard.php");
-
-
-    }else{
-        $err="Invalid Login";
-    }
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,11 +44,7 @@ if(isset($_POST['login'])){
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <?php if(isset($err)){?>
-                                    <div class="alert alert-danger">
-                                        <strong>Error!</strong>
-                                    </div>
-                                    <?php }?>
+                                    
                                     <form class="user" action="" method="post">
                                         <div class="form-group">
                                             <input name="email" type="email" class="form-control form-control-user"
