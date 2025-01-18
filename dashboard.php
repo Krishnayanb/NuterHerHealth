@@ -35,7 +35,7 @@
         <!-- Sidebar -->
         
         <!-- End of Sidebar -->
-<?php include("admin_inc/sidebar.php"); ?>
+<?php include("sidebar.php"); ?>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -43,7 +43,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include("admin_inc/top.php"); ?>
+                <?php include("top.php"); ?>
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -58,7 +58,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-<?php include("admin_inc/footer.php"); ?>
+<?php include("footer.php"); ?>
             <!-- End of Footer -->
 
         </div>
