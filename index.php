@@ -4,8 +4,8 @@
 <html lang="en">
 <head>
     <title>Doctor Plus | Home</title>
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="keywords" content="Doctor Plus, Medical Web Template, Responsive Web Design">
