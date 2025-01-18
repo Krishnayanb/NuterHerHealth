@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="keywords" content="Doctor Plus, Medical Web Template, Responsive Web Design">
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -65,7 +65,7 @@
     </div>
 
     <!-- Footer -->
-    <?php include("inc/footer.php"); ?>
+    <?php include("footer.php"); ?>
 
     <script src="js/bootstrap.js"></script>
 </body>
