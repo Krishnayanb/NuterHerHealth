@@ -3,12 +3,12 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="header-logo">
-					<a href="index.php"><img src="images/LOGO1.jpg" alt="logo" width="220px "height="220px" /></a>					
+					<a href="index.php"><img src="LOGO1.jpg" alt="logo" width="220px "height="220px" /></a>					
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="header-banner">
-					<a href="index.php"><img src="images/nurture.png" alt="logo" width="420px" height="450px"/></a>
+					<a href="index.php"><img src="nurture.png" alt="logo" width="420px" height="450px"/></a>
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -25,7 +25,7 @@
 		<div class="container">
 			<!--top-nav-->
 			<div class="top-nav cl-effect-5">
-				<span class="menu-icon"><img src="images/menu-icon.png" alt=""/></span>		
+				<span class="menu-icon"><img src="menu-icon.png" alt=""/></span>		
 				<ul class="nav1">
 					<li><a href="index.php"><span data-hover="Home">Home</span></a></li>
 					<li><a href="about.php" > <span data-hover="About">About</span></a></li>
