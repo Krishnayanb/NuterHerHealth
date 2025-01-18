@@ -1,108 +1,110 @@
+<?php session_start(); 
+include("admin_inc/db.php");
+if(isset($_POST['login'])){
+    $e=$_POST['email'];
+    $p=$_POST['pass'];
+
+    $sel="SELECT * FROM admin WHERE aemail='$e' AND apass='$p'";
+    $rs=$con->query($sel);
+    if($rs->num_rows>0){
+        $dt=$rs->fetch_assoc();
+        $_SESSION['admin_name']=$dt['aname'];
+        $_SESSION['role']=$dt['role'];
+        header("location:dashboard.php");
+
+
+    }else{
+        $err="Invalid Login";
+    }
+}
+
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Doctor Plus a Medical Category Flat bootstrap Responsive website Template | Home :: w3layouts</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Doctor Plus Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //Custom Theme files -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<!-- //js -->	
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Matrisokhi - Admin Login</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
 </head>
-<body>
-	<!--header-->
-	<?php include("inc/header.php"); ?>
-	<!--//header-bottom-->
-	
-	<div class="container-fluid p-3em mb-5 banner">
-        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                                <img src="../images/logo.png">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                    </div>
+                                    <?php if(isset($err)){?>
+                                    <div class="alert alert-danger">
+                                        <strong>Error!</strong>
+                                    </div>
+                                    <?php }?>
+                                    <form class="user" action="" method="post">
+                                        <div class="form-group">
+                                            <input name="email" type="email" class="form-control form-control-user"
+                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter Email Address...">
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="pass" type="password" class="form-control form-control-user"
+                                                id="exampleInputPassword" placeholder="Password">
+                                        </div>
+                                        
+                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="login" value="Login" />                                       
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
     </div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img class="banner-text-h1" src="images/banner-text-h1.png" height="100px">
-				
-				<div class="col-md-6">
-					<div class="banner-text">
-						<h3>Empowering Your Journey to Motherhood</h3>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="banner-text">
-						<h3>মায়ের আশ্বাস, প্রতিটি পদক্ষেপে</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>  
-	<!--//banner-bottom-->
-	<!--gallery-->
-	<div class="gallery" id="gallery">
-		<div class="col-md-6 gallery-left">
-			
-		</div>
-		<div class="col-md-6 gallery-right">
-			<div class="gallery-grid-a">
-				
-			</div>	
-			<div class="gallery-grid-b">		
-				
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<!--//gallery-->
-	<!--work-->
-	<div class="work">		
-		<div class="container">	
-			<div class="work-title">
-				<h3>More Facilities Coming Soon</h3>
-				<p>This is an ongoing project and we hope to add more functionalities in this website in near future</p>
-			</div>
-			<div class="col-md-4 work-grids">
-				<ul>
-					<li><img src="images/icon1.png" alt=""></li>
-					<li>
-						<h4>Video-calling with doctor</h4>
-						<p>A face-time option shall be available which will implement a private virtual room with the doctor and the patient.</p>
-					</li>
-				</ul>
-			</div>	
-			<div class="col-md-4 work-grids">
-				<ul>
-					<li><img src="images/chat.png" alt=""></li>
-					<li>
-						<h4>Chat with Doctor</h4>
-						<p>An integrated private chat room with the doctor to have a hassle-free chatting experience. Talk to the doctor like you talk to any friend without the fear of getting judged.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-4 work-grids">
-				<ul>
-					<li><img src="images/period.png" alt=""></li>
-					<li>
-						<h4>Period tracker</h4>
-						<p>A period tracking system shall be available to keep track of your menstrual cycle.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!--//work-->
-	
-	<!--footer-->
-	<?php include("inc/footer.php");?>
-	<!--//footer-->
-	
-    <script src="js/bootstrap.js"> </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
 </body>
+
 </html>
