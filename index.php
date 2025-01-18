@@ -67,7 +67,7 @@
     <!-- Footer -->
     <?php include("inc/footer.php"); ?>
 
-    <script src="js/bootstrap.js"></script>
+    <script src="bootstrap.js"></script>
 </body>
 </html>
 
