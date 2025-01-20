@@ -5,7 +5,7 @@
     }
 ?>
 <?php
-    include("admin_inc/db.php");
+    include("db.php");
 
     if(isset($_POST['save'])){
         $id=$_POST['id'];
