@@ -18,7 +18,7 @@
 </head>
 <body>
 	<!--header-->
-	<?php include("inc/header.php"); ?>
+	<?php include("header.php"); ?>
 	<!--//header-->
 	
 	<!--contact-->
@@ -44,9 +44,9 @@
 	<!--//contact-->
 	
 	<!--footer-->
-	<?php include("inc/footer.php");?>
+	<?php include("footer.php");?>
 	<!--smooth-scrolling-of-move-up-->
 	
-    <script src="js/bootstrap.js"> </script>
+    <script src="bootstrap.js"> </script>
 </body>
 </html>
