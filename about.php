@@ -11,14 +11,14 @@
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="jquery-1.11.1.min.js"></script> 
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<!--header-->
-	<?php include("inc/header.php"); ?>
+	<?php include("header.php"); ?>
 	<!--//header-->
 	<!--about-->
 	<div class="about"> 
@@ -26,7 +26,7 @@
 			<h3>Who we are</h3>
 			<div class="about-text">
 				<div class="col-md-4 about-text-left">
-					<img src="images/about-image.jpg" class="img-responsive" alt=""/>
+					<img src="about-image.jpg" class="img-responsive" alt=""/>
 				</div>
 				<div class="col-md-4 about-text-right">
 					
@@ -54,7 +54,7 @@
 				<div class="row team-row">
 					<div class="col-sm-6 col-md-4 team-grids">
 						<div class="thumbnail team-thmnl">
-							<img src="images/register.png" alt="...">
+							<img src="register.png" alt="...">
 							<div class="caption">
 								
 								<h4><a href="#">Register Yourself</a></h4>
@@ -82,7 +82,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 team-grids">
 						<div class="thumbnail team-thmnl">
-							<img src="images/services.png" alt="...">
+							<img src="services.png" alt="...">
 							<div class="caption">
 								<h4><a href="#">Go to Services</a></h4>
 								
@@ -109,7 +109,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 team-grids">
 						<div class="thumbnail team-thmnl">
-							<img src="images/bookappnt.png" alt="...">
+							<img src="bookappnt.png" alt="...">
 							<div class="caption">
 								<h4><a href="#">Book Appointment</a></h4>
 														
@@ -143,7 +143,7 @@
 		
 	</div>	
 	
-	<?php include("inc/footer.php");?>
+	<?php include("footer.php");?>
 	<!-- jQuery library -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
 
